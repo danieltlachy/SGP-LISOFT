@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLListaSolicitudesCambioController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="lbTitulo" layoutX="284.0" layoutY="32.0" text="Analizar solicitud de cambio" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="59.0" fitWidth="62.0" layoutX="14.0" layoutY="21.0" onMouseClicked="#clicBtnRegresar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/regresar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button layoutX="728.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnAnalizar" prefHeight="31.0" prefWidth="147.0" text="Analizar" />
+            <TableView fx:id="tvSolicitudesCambio" layoutY="169.0" prefHeight="422.0" prefWidth="900.0">
+               <columns>
+                  <TableColumn fx:id="colNombreProyecto" prefWidth="161.0" text="Nombre del proyecto" />
+                  <TableColumn fx:id="colNombreSolicitud" prefWidth="204.0" text="Nombre de solicitud" />
+                  <TableColumn fx:id="colNombreSolicitante" prefWidth="142.0" text="Nombre solicitante" />
+                  <TableColumn fx:id="colApellidoPaterno" prefWidth="125.0" text="Apellido paterno" />
+                  <TableColumn fx:id="colApellidoMaterno" prefWidth="130.0" text="Apellido materno" />
+                  <TableColumn fx:id="colFechaSolicitud" prefWidth="134.0" text="Fecha de solicitud" />
+               </columns>
+            </TableView>
+            <Label layoutX="6.0" layoutY="128.0" text="Tabla de solicitudes">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

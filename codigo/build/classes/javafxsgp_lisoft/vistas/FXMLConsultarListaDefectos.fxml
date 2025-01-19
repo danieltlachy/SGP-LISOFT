@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLConsultarListaDefectosController">
+   <children>
+      <Label layoutX="292.0" layoutY="4.0" text="Crear actividad" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="60.0" prefWidth="900.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label layoutX="318.0" layoutY="4.0" text="Lista de defectos" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="64.0" layoutX="14.0" layoutY="4.0" onMouseClicked="#clcRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tvDefectos" layoutX="39.0" layoutY="168.0" prefHeight="402.0" prefWidth="837.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="173.0" text="Nombre de defecto" />
+          <TableColumn fx:id="colTipo" prefWidth="139.0" text="Tipo de defecto" />
+            <TableColumn fx:id="colFechaDeteccion" prefWidth="159.0" text="Fecha de deteccion" />
+            <TableColumn fx:id="colEstado" prefWidth="89.0" text="Estado" />
+            <TableColumn fx:id="colResponsableReporte" prefWidth="276.0" text="Responsable de reporte" />
+        </columns>
+      </TableView>
+      <Button layoutX="728.0" layoutY="126.0" mnemonicParsing="false" onAction="#btnDetalleDefecto" text="Detalles de defecto" />
+      <TextField fx:id="tfBusqueda" layoutX="39.0" layoutY="126.0" promptText="Buscar" />
+   </children>
+</AnchorPane>

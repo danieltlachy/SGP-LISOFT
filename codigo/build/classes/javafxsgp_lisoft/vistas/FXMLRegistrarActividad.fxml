@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLRegistrarActividadController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="lbTitulo" layoutX="324.0" layoutY="28.0" prefHeight="45.0" prefWidth="253.0" text="Registrar actividad" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="65.0" fitWidth="63.0" layoutX="14.0" layoutY="19.0" onMouseClicked="#clicRegresar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/regresar.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <TableView fx:id="tvActividadesAsignadas" layoutY="173.0" prefHeight="427.0" prefWidth="900.0">
+               <columns>
+                  <TableColumn fx:id="colNombreActividad" prefWidth="532.0" text="Nombre actividad" />
+                  <TableColumn fx:id="colFechaInicio" prefWidth="139.0" text="Fecha de inicio" />
+                  <TableColumn fx:id="colFechaFin" prefWidth="106.0" text="Fecha de fin" />
+                  <TableColumn fx:id="colEsfuerzo" prefWidth="122.0" text="Esfuerzo" />
+               </columns>
+            </TableView>
+            <Button layoutX="700.0" layoutY="124.0" mnemonicParsing="false" onAction="#btnFinalizarActividad" prefHeight="31.0" prefWidth="180.0" text="Finalizar actividad" />
+            <Label layoutX="14.0" layoutY="129.0" text="Actividades">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

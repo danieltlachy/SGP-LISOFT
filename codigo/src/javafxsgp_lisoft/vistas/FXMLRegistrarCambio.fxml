@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLRegistrarCambioController">
+   <children>
+      <TextField fx:id="tfNombreCambio" layoutX="146.0" layoutY="139.0" onMouseClicked="#mcNombreCambio" prefHeight="31.0" prefWidth="266.0" />
+      <Label layoutX="23.0" layoutY="229.0" text="Descripcion">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextArea fx:id="taDescripcion" layoutX="23.0" layoutY="246.0" onMouseClicked="#mcDescripcion" prefHeight="114.0" prefWidth="444.0" wrapText="true" />
+      <ComboBox fx:id="cbTipo" layoutX="146.0" layoutY="173.0" onMouseClicked="#mcTipoCambio" prefHeight="31.0" prefWidth="266.0" promptText="-Seleccionar un tipo-" />
+      <Button layoutX="242.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnRegistrarCambio" text="Registrar cambio" />
+      <Button layoutX="383.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnCancelar" prefHeight="17.0" prefWidth="77.0" text="Cancelar" />
+      <AnchorPane prefHeight="53.0" prefWidth="490.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label layoutX="88.0" text="Registro de Cambio" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Circle fill="#8a8a8a" layoutX="32.0" layoutY="27.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fx:id="ivRegresar" fitHeight="54.0" fitWidth="54.0" layoutX="6.0" onMouseClicked="#clcRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tfEsfuerzoEstimado" layoutX="146.0" layoutY="206.0" onMouseClicked="#mcEsfuerzo" prefHeight="31.0" prefWidth="266.0" text="0" />
+      <Label layoutX="25.0" layoutY="89.0" text="Solicitud de cambio:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbSolicitudes" layoutX="146.0" layoutY="85.0" prefHeight="31.0" prefWidth="266.0" promptText="Ninguna" />
+      <Label layoutX="24.0" layoutY="210.0" text="Esfuerzo estimado">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="177.0" text="Tipo de cambio">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="143.0" text="Nombre de cambio:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="116.0" text="(Opcional)">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLMenuPrincipalDesarrolladorController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label fx:id="lblTituloVista" layoutX="285.0" layoutY="14.0" text="Menú Principal" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="97.0" layoutX="802.0" layoutY="8.0" onMouseClicked="#clicCerrarSesion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/cerrarSesion.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="50.0" layoutY="100.0" prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="350.0" layoutX="105.0" layoutY="50.0" onMouseClicked="#clcMenuActividades" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/menu%20desarrollador/Menu%20Actividades%20-%20copia.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="350.0" layoutX="532.0" layoutY="50.0" onMouseClicked="#clcMenuCambios" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/menu%20desarrollador/Menu%20Cambios%20-%20copia.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="350.0" layoutX="109.0" layoutY="286.0" onMouseClicked="#clcMenuDefectos" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/menu%20desarrollador/Menu%20Defectos%20-%20copia.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="350.0" layoutX="532.0" layoutY="286.0" onMouseClicked="#clcMenuBitacora" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/menu%20desarrollador/Menu%20Bitacora%2001%20-%20copia.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

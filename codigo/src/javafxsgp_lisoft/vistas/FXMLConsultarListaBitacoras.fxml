@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLConsultarListaBitacorasController">
+   <children>
+      <Label layoutX="292.0" layoutY="4.0" text="Crear actividad" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="60.0" prefWidth="900.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label layoutX="318.0" layoutY="4.0" text="Lista de bitacoras" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="64.0" layoutX="14.0" layoutY="4.0" onMouseClicked="#clcRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tvBitacoras" layoutX="39.0" layoutY="193.0" prefHeight="377.0" prefWidth="837.0">
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="487.0" text="Nombre" />
+            <TableColumn fx:id="colTipo" prefWidth="186.0" text="Tipo" />
+            <TableColumn fx:id="colFechaModificacion" prefWidth="162.0" text="Ultima modificacion" />
+         </columns>
+      </TableView>
+      <TextField fx:id="tfBusqueda" layoutX="39.0" layoutY="139.0" promptText="Buscar" />
+      <ImageView fitHeight="121.0" fitWidth="200.0" layoutX="676.0" layoutY="102.0" onMouseClicked="#clcConsultarBitacora" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/menu%20cambio/Consultar%20Bitacora%20del%20Desarrollador.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLMenuCambiosResponsableController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label fx:id="lblTituloVista" layoutX="285.0" layoutY="14.0" text="Menú cambios" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="86.0" layoutX="28.0" layoutY="11.0" onMouseClicked="#clicRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="50.0" layoutY="136.0" prefHeight="430.0" prefWidth="800.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Pane prefHeight="215.0" prefWidth="400.0" style="-fx-background-color: LIGhTGRAY;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="400.0" layoutX="23.0" layoutY="33.0" onMouseClicked="#clicAnalizarSolicitudCambio" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../recursos/menu%20cambio/Analizar%20Solicitud%20de%20Cambio%2001.png" />
+                     </image></ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="400.0" prefHeight="215.0" prefWidth="400.0" style="-fx-background-color: LIGhTGRAY;">
+               <children>
+                  <ImageView fitHeight="215.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Pane layoutY="215.0" prefHeight="215.0" prefWidth="400.0" style="-fx-background-color: LIGhTGRAY;" />
+            <Pane layoutX="400.0" layoutY="215.0" prefHeight="215.0" prefWidth="400.0" style="-fx-background-color: LIGhTGRAY;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

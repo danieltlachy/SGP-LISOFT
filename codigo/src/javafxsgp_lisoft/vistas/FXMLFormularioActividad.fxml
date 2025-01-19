@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLFormularioActividadController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="902.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label fx:id="lblTituloVista" layoutX="283.0" layoutY="14.0" text="Crear Actividad" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="86.0" layoutX="65.0" layoutY="7.0" onMouseClicked="#clicRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="85.0" layoutY="130.0" prefHeight="415.0" prefWidth="731.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="31.0" layoutY="30.0" text="Nombre:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dpFechaInicio" layoutX="233.0" layoutY="81.0" prefHeight="31.0" prefWidth="325.0" promptText="Selecciona la fecha de inicio" />
+            <DatePicker fx:id="dpFechaFin" layoutX="233.0" layoutY="136.0" prefHeight="31.0" prefWidth="325.0" promptText="Selecciona la fecha de fin" />
+            <Label layoutX="31.0" layoutY="87.0" text="Fecha de inicio:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="142.0" text="Fecha de conclusión:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="188.0" text="Esfuerzo (en minutos):" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="302.0" text="Descripción:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="taDescripcion" layoutX="233.0" layoutY="244.0" prefHeight="115.0" prefWidth="482.0" />
+            <TextField fx:id="tfNombreActividad" alignment="CENTER" layoutX="233.0" layoutY="35.0" prefHeight="31.0" prefWidth="325.0" promptText="Ingrese el nombre de la actividad" />
+            <TextField fx:id="tfEsfuerzoActividad" alignment="CENTER" layoutX="233.0" layoutY="182.0" prefHeight="31.0" prefWidth="325.0" promptText="Ingrese el esfuerzo de la actividad" />
+         </children>
+      </Pane>
+      <Button layoutX="395.0" layoutY="555.0" mnemonicParsing="false" onAction="#btnCrearActividad" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: gray;" text="Crear" textFill="WHITE" />
+   </children>
+</AnchorPane>

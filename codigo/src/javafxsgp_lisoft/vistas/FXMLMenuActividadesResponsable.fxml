@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLMenuActividadesResponsableController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="100.0" prefWidth="902.0" style="-fx-background-color: GRAY;">
+               <children>
+                  <Label fx:id="lblTituloVista" layoutX="254.0" layoutY="14.0" text="Menú Actividades" textFill="WHITE">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="117.0" fitWidth="86.0" layoutX="65.0" layoutY="7.0" onMouseClicked="#clicRegresar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/regresar.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <AnchorPane layoutX="-1.0" layoutY="100.0" prefHeight="500.0" prefWidth="900.0">
+               <children>
+                  <AnchorPane prefHeight="250.0" prefWidth="450.0">
+                     <children>
+                        <ImageView fitHeight="180.0" fitWidth="300.0" layoutX="75.0" layoutY="64.0" onMouseClicked="#clcCrearActividad" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/actividad%20responsable/Crear%20actividad%2001.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="450.0" prefHeight="250.0" prefWidth="450.0">
+                     <children>
+                        <ImageView fitHeight="180.0" fitWidth="300.0" layoutX="75.0" layoutY="53.0" onMouseClicked="#clcAsignarActividad" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/actividad%20responsable/Asignar%20Actividad%2001.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="250.0" prefHeight="250.0" prefWidth="450.0">
+                     <children>
+                        <ImageView fitHeight="180.0" fitWidth="300.0" layoutX="75.0" layoutY="62.0" onMouseClicked="#clcDesasignarActividad" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@../recursos/actividad%20responsable/Desasignar%20actividad.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="450.0" layoutY="250.0" prefHeight="250.0" prefWidth="450.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

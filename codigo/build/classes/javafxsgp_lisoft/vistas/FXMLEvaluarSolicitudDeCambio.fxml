@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLEvaluarSolicitudDeCambioController">
+   <children>
+      <Pane prefHeight="620.0" prefWidth="900.0">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="lbtitulo" layoutX="334.0" layoutY="32.0" text="Solicitud de cambio" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="64.0" fitWidth="55.0" layoutX="14.0" layoutY="23.0" onMouseClicked="#clicBtnRegresar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/regresar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="3.0" layoutY="107.0" prefHeight="21.0" prefWidth="155.0" text="Nombre de solicitud:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbNombreSolicitud" layoutX="3.0" layoutY="131.0" prefHeight="21.0" prefWidth="232.0" />
+            <Label layoutX="322.0" layoutY="109.0" text="Nombre del solicitante:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbNombreDesarrollador" layoutX="322.0" layoutY="130.0" prefHeight="21.0" prefWidth="174.0" />
+            <TextArea fx:id="taImpactoCambio" layoutY="480.0" prefHeight="50.0" prefWidth="900.0" promptText="Impacto del cambio" />
+            <TextArea fx:id="taDescripcionCambio" editable="false" layoutY="282.0" prefHeight="50.0" prefWidth="900.0" promptText="Descricion del cambio" />
+            <TextArea fx:id="taAccionPropuesta" layoutX="1.0" layoutY="570.0" prefHeight="50.0" prefWidth="900.0" promptText="Accion propuesta" />
+            <Label layoutX="2.0" layoutY="183.0" text="Nombre del defecto asociado:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="540.0" layoutY="107.0" text="Fecha de solicitud:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbFechaSolicitud" layoutX="540.0" layoutY="128.0" prefHeight="21.0" prefWidth="126.0" />
+            <Label layoutX="2.0" layoutY="450.0" text="Impacto del cambio">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="245.0" text="Descripcion del cambio">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="547.0" text="Accion propuesta">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="350.0" text="Razon del cambio">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="taRazonCambio" editable="false" layoutY="389.0" prefHeight="50.0" prefWidth="900.0" promptText="Razon del cambio" />
+            <Button layoutX="752.0" layoutY="161.0" mnemonicParsing="false" onAction="#btnAprobarSolicitud" text="Aprobar solicitud" />
+            <Button layoutX="747.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnRechazarSolicitud" text="Rechazar solicitud" />
+            <Label fx:id="lbNombreDefecto" layoutX="242.0" layoutY="183.0" prefHeight="21.0" prefWidth="457.0" text="N/A" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

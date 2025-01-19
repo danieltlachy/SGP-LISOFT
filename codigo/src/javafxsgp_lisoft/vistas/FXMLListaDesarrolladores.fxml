@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLListaDesarrolladoresController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="904.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label fx:id="lblTituloVista" layoutX="279.0" layoutY="14.0" text="Desarrolladores" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="86.0" layoutX="65.0" layoutY="7.0" onMouseClicked="#clicRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tvListaDesarrolladores" layoutY="273.0" prefHeight="329.0" prefWidth="904.0">
+         <columns>
+            <TableColumn fx:id="colNombreDesarrollador" prefWidth="331.0" text="Nombre del Desarrollador:" />
+            <TableColumn fx:id="colMatriculaDesarrollador" prefWidth="227.0" text="Matrícula:" />
+            <TableColumn fx:id="colEEDesarrollador" prefWidth="345.0" text="Experiencia Educativa actual:" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutY="100.0" prefHeight="166.0" prefWidth="904.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="237.0" layoutY="46.0" onMouseClicked="#clcCrearDesarrollador" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/crear%20desarrollador%20responsable/Crear%20Desarrollador%2001.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="469.0" layoutY="35.0" onMouseClicked="#clicModificarDesarrollador" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/crear%20desarrollador%20responsable/Modificar%20Desarrollador%2001.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

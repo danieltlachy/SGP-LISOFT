@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLFormularioProyectoController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="902.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label fx:id="lblTituloVista" layoutX="288.0" layoutY="14.0" text="Crear Proyecto" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="86.0" layoutX="65.0" layoutY="7.0" onMouseClicked="#clicRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="86.0" layoutY="124.0" prefHeight="377.0" prefWidth="731.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="31.0" layoutY="30.0" text="Nombre:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfNombre" alignment="CENTER" layoutX="233.0" layoutY="24.0" prefHeight="31.0" prefWidth="325.0" promptText="ej. Proyecto para las Prácticas Profesionales" />
+            <DatePicker fx:id="dpFechaInicio" layoutX="233.0" layoutY="81.0" prefHeight="31.0" prefWidth="325.0" promptText="Selecciona la fecha de inicio" />
+            <DatePicker fx:id="dpFechaFin" layoutX="233.0" layoutY="136.0" prefHeight="31.0" prefWidth="325.0" promptText="Selecciona la fecha de conclusión" />
+            <Label layoutX="31.0" layoutY="87.0" text="Fecha de inicio:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="142.0" text="Fecha de conclusión:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="197.0" text="Estado:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="313.0" text="Descripción:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="taDescripcion" layoutX="233.0" layoutY="286.0" prefHeight="73.0" prefWidth="482.0" />
+            <Label layoutX="31.0" layoutY="240.0" text="Responsable:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbResponsable" layoutX="233.0" layoutY="234.0" prefHeight="31.0" prefWidth="325.0" promptText="Selecciona el Responsable" />
+            <ComboBox fx:id="cbEstado" layoutX="233.0" layoutY="192.0" prefHeight="31.0" prefWidth="325.0" promptText="Selecciona el Estado del Proyecto" />
+         </children>
+      </Pane>
+      <Button layoutX="395.0" layoutY="535.0" mnemonicParsing="false" onAction="#btnCrearProyecto" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: grey;" text="Crear" textFill="WHITE" />
+   </children>
+</AnchorPane>

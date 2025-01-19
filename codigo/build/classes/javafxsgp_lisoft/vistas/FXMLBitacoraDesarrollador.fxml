@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLBitacoraDesarrolladorController">
+   <children>
+      <Label layoutX="292.0" layoutY="4.0" text="Crear actividad" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="60.0" prefWidth="900.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label fx:id="lbTitulo" layoutX="290.0" layoutY="4.0" text="Bitacora de cambios" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tvBitacoraActividad" layoutX="32.0" layoutY="148.0" prefHeight="373.0" prefWidth="837.0" visible="false">
+         <columns>
+            <TableColumn fx:id="colNombreActividad" prefWidth="508.0" text="Nombre" />
+            <TableColumn fx:id="colEstadoActividad" prefWidth="156.0" text="Estado" />
+            <TableColumn fx:id="colModificacionActividad" prefWidth="171.0" text="Fecha de Registro" />
+         </columns>
+      </TableView>
+      <Circle fill="#908b8b" layoutX="39.0" layoutY="30.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="13.0" layoutY="3.0" onMouseClicked="#clcRegresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/regresar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="lbDesarrollador" layoutX="32.0" layoutY="108.0" text="Desarrollador: Juan Perez Rodriguez">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvBitacoraCambio" layoutX="32.0" layoutY="157.0" prefHeight="373.0" prefWidth="837.0" visible="false">
+         <columns>
+            <TableColumn fx:id="colNombreCambio" prefWidth="336.0" text="Nombre" />
+            <TableColumn fx:id="colEstadoCambio" prefWidth="115.0" text="Estado" />
+            <TableColumn fx:id="colTipoCambio" prefWidth="252.0" text="Tipo" />
+            <TableColumn fx:id="colModificacionCambio" prefWidth="133.0" text="Fecha de registro" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

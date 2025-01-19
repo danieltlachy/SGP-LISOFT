@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLListaProyectosController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="904.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label fx:id="lblTituloVista" layoutX="344.0" layoutY="14.0" text="Proyectos" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="86.0" layoutX="65.0" layoutY="7.0" onMouseClicked="#clicRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tvListaProyectos" layoutY="283.0" prefHeight="329.0" prefWidth="904.0">
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="331.0" text="Nombre del Proyecto:" />
+            <TableColumn fx:id="colMateria" prefWidth="305.0" text="Experiencia Educativa asignada:" />
+            <TableColumn fx:id="colFechaInicio" prefWidth="267.0" text="Fecha de inicio:" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="352.0" layoutY="139.0" onMouseClicked="#clicCrearProyecto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/proyecto%20responsable/Crear%20Proyecto%2001.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

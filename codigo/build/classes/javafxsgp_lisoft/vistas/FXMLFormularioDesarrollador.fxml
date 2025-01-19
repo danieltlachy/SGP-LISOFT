@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsgp_lisoft.controladores.FXMLFormularioDesarrolladorController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="1004.0" style="-fx-background-color: GRAY;">
+         <children>
+            <Label fx:id="lblTituloVista" layoutX="288.0" layoutY="14.0" text="Crear Desarrollador" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="86.0" layoutX="65.0" layoutY="7.0" onMouseClicked="#clicRegresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/regresar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="43.0" layoutY="117.0" prefHeight="317.0" prefWidth="918.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="497.0" layoutY="76.0" text="Matrícula:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="27.0" text="Nombre:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfNombre" alignment="CENTER" layoutX="211.0" layoutY="22.0" prefHeight="31.0" prefWidth="252.0" promptText="ej. Daniel" />
+            <TextField fx:id="tfMatricula" alignment="CENTER" layoutX="652.0" layoutY="71.0" prefHeight="31.0" prefWidth="252.0" promptText="ej. S21013830" />
+            <ComboBox fx:id="cbMateria" layoutX="331.0" layoutY="193.0" prefHeight="31.0" prefWidth="346.0" promptText="Selecciona una Experiencia Educativa:" />
+            <Label layoutX="150.0" layoutY="198.0" text="Experiencia Educativa:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="497.0" layoutY="27.0" text="Apellido Paterno:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="76.0" prefHeight="5.0" prefWidth="119.0" text="Apellido Materno:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfApellidoPaterno" alignment="CENTER" layoutX="652.0" layoutY="22.0" prefHeight="31.0" prefWidth="252.0" promptText="ej. Mongeote" />
+            <TextField fx:id="tfApellidoMaterno" alignment="CENTER" layoutX="211.0" layoutY="71.0" prefHeight="31.0" prefWidth="252.0" promptText="ej. Tlachy" />
+            <Label layoutX="150.0" layoutY="235.0" text="Proyecto:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbProyecto" layoutX="331.0" layoutY="230.0" prefHeight="31.0" prefWidth="346.0" promptText="Selecciona un Proyecto:" />
+            <Label layoutX="26.0" layoutY="128.0" text="Correo institucional:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfCorreo" alignment="CENTER" layoutX="211.0" layoutY="123.0" prefHeight="31.0" prefWidth="252.0" promptText="ej. S21013830@estudiantes.uv.mx" />
+            <Label layoutX="497.0" layoutY="128.0" text="Contraseña:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="tfContrasenia" alignment="CENTER" layoutX="652.0" layoutY="123.0" prefHeight="31.0" prefWidth="252.0" promptText="ej. ABC123!&quot;#" />
+         </children>
+      </Pane>
+      <Button layoutX="444.0" layoutY="455.0" mnemonicParsing="false" onAction="#clicCrearDesarrollador" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: gray;" text="Crear" textFill="WHITE" />
+   </children>
+</AnchorPane>
